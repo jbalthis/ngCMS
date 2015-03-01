@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="angCms" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="angCms" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="angCms" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="angCms" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>angCms</title>
+    <base href="/">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="bower_components/html5-boilerplate/dist/css/normalize.css" rel="stylesheet">
+    <link href="bower_components/html5-boilerplate/dist/css/main.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap-material-design/dist/css/material-wfont.min.css" rel="stylesheet">
+    <link href="bower_components/nvd3/build/nv.d3.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- message flash -->
+<div id="messageFlash" message-flash></div>
+
+<!-- primary layout -->
+
+
+
+<!-- ******************** -->
+<!-- *** body scripts *** -->
+<!-- ******************** -->
+
+<!-- misc dependencies -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="bower_components/nvd3/build/nv.d3.min.js"></script>
+<script src="bower_components/ckeditor/ckeditor.js"></script>
+
+<!-- angularjs / modules -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-nvd3/dist/angular-nvd3.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/angulartics/dist/angulartics.min.js"></script>
+<script src="bower_components/angulartics/dist/angulartics-piwik.min.js"></script>
+
+<!-- local modules -->
+<script src="js/ang-cms.js"></script>
+
+
+
+<!-- bootstrap / material design -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+<script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script>
+    // bootstrap material design init
+    $(document).ready(function() {
+        $.material.init();
+    });
+</script>
+
+<!-- piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//eng-tme3.cisco.com/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<noscript><p><img src="//eng-tme3.cisco.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+
+<!-- TODO: Remove LiveReload Code -->
+<!-- BEGIN LiveReload Code -->
+<script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+</script>
+<!-- END LiveReload Code -->
+
+</body>
+</html>
