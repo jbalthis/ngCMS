@@ -1,3 +1,0 @@
-/**
- * User Schema and Model
- */

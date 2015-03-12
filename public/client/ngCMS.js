@@ -7,5 +7,5 @@
 
 angular.module('ngCMS',
     [
-
+        ''
     ]);

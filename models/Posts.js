@@ -1,3 +1,0 @@
-/**
- * Post Schema and Model
- */
